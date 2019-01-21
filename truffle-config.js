@@ -1,7 +1,8 @@
 "use strict";
 var HDWalletProvider = require("truffle-hdwallet-provider");
 var secrets = require("./secrets.js");
-var api = secrets.api;
+var api-rinkeby = secrets.api-rinkeby;
+var api-mainnet = secrets.api-mainnet;
 var mnemonic = secrets.mnemonic;
 
 console.log("Mnemonic is: ", mnemonic);
@@ -19,7 +20,7 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(
           mnemonic,
-          "https://mainnet.infura.io/v3/<<Your INFURA API TOKEN>>", 2
+          api-mainnet, 2
         );
       },
       gas: 200000000,
@@ -30,7 +31,7 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(
           mnemonic,
-          api
+          api-rinkeby
         );
       },
       gas: 5000000,
