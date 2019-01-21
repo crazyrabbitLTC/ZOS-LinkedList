@@ -1,0 +1,152 @@
+{
+  "contracts": {
+    "LinkedList": {
+      "address": "0x07a457d878bf363e0bb5aa0b096092f941e19962",
+      "constructorCode": "608060405234801561001057600080fd5b50610ccd806100206000396000f3fe",
+      "bodyBytecodeHash": "7a9a2eddf2144f0010b8d8b3e814bbbdfa4077e92238fa23f779b289aaa3e063",
+      "localBytecodeHash": "7b3e92b42a8bd7dbdde31f1dc43dd079b0a3add50a0744583ad3b7ab93e6899b",
+      "deployedBytecodeHash": "7b3e92b42a8bd7dbdde31f1dc43dd079b0a3add50a0744583ad3b7ab93e6899b",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_struct<LinkedList.Node>": {
+          "id": "t_struct<LinkedList.Node>",
+          "kind": "struct",
+          "label": "LinkedList.Node",
+          "members": [
+            {
+              "label": "next",
+              "astId": 14,
+              "type": "t_bytes32",
+              "src": "245:12:0"
+            },
+            {
+              "label": "data",
+              "astId": 16,
+              "type": "t_string",
+              "src": "267:11:0"
+            }
+          ]
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_struct<LinkedList.Node>>": {
+          "id": "t_mapping<t_struct<LinkedList.Node>>",
+          "valueType": "t_struct<LinkedList.Node>",
+          "label": "mapping(key => LinkedList.Node)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 163,
+          "type": "t_bool",
+          "src": "757:24:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 165,
+          "type": "t_bool",
+          "src": "876:25:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 214,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:1"
+        },
+        {
+          "contract": "LinkedList",
+          "path": "contracts/LinkedList.sol",
+          "label": "nodes",
+          "astId": 21,
+          "type": "t_mapping<t_struct<LinkedList.Node>>",
+          "src": "331:38:0"
+        },
+        {
+          "contract": "LinkedList",
+          "path": "contracts/LinkedList.sol",
+          "label": "length",
+          "astId": 23,
+          "type": "t_uint256",
+          "src": "448:18:0"
+        },
+        {
+          "contract": "LinkedList",
+          "path": "contracts/LinkedList.sol",
+          "label": "head",
+          "astId": 25,
+          "type": "t_bytes32",
+          "src": "497:19:0"
+        },
+        {
+          "contract": "LinkedList",
+          "path": "contracts/LinkedList.sol",
+          "label": "listName",
+          "astId": 27,
+          "type": "t_string",
+          "src": "579:22:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "ZOS-LinkedList/LinkedList": [
+      {
+        "address": "0xfa33c8ef8b5c4f3003361c876a298d1db61cca4e",
+        "version": "0.1.0",
+        "implementation": "0x07a457d878bf363e0bb5aa0b096092f941e19962",
+        "admin": "0xbe0b0f08a599f07699e98a9d001084e97b9a900a"
+      }
+    ]
+  },
+  "zosversion": "2",
+  "version": "0.1.0",
+  "app": {
+    "address": "0xbe0b0f08a599f07699e98a9d001084e97b9a900a"
+  },
+  "package": {
+    "address": "0x27d44c7337ce4d67b7cd573e9c36bdeed2b2162a"
+  },
+  "provider": {
+    "address": "0x5d18ded3c0a476fcbc9e67fc1c613cfc5dd0d34b"
+  }
+}
