@@ -1,0 +1,32 @@
+{
+  "name": "zos-linkedlist",
+  "version": "1.0.0",
+  "description": "Solidity Singly Linked List implementation as an EVM packageu using ZeppelinOS",
+  "main": "index.js",
+  "dependencies": {
+    "truffle": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazyrabbitLTC/ZOS-LinkedList.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "linkedlist",
+    "data",
+    "structure",
+    "zeppelin",
+    "zeppelinOS"
+  ],
+  "author": "Dennison Bertram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crazyrabbitLTC/ZOS-LinkedList/issues"
+  },
+  "homepage": "https://github.com/crazyrabbitLTC/ZOS-LinkedList#readme"
+}
