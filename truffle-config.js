@@ -1,8 +1,8 @@
 "use strict";
 var HDWalletProvider = require("truffle-hdwallet-provider");
 var secrets = require("./secrets.js");
-var api-rinkeby = secrets.api-rinkeby;
-var api-mainnet = secrets.api-mainnet;
+var apiRinkeby = secrets.apiRinkeby;
+var apiMainnet = secrets.apiMainnet;
 var mnemonic = secrets.mnemonic;
 
 console.log("Mnemonic is: ", mnemonic);
@@ -20,18 +20,17 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(
           mnemonic,
-          api-mainnet, 2
+          apiMainnet
         );
       },
       gas: 200000000,
-      gasPrice: 5e7,
       network_id: 1
     },
     rinkeby: {
       provider: function() {
         return new HDWalletProvider(
           mnemonic,
-          api-rinkeby
+          apiRinkeby
         );
       },
       gas: 5000000,
