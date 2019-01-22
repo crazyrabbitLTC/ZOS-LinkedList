@@ -16,6 +16,13 @@
     "type": "git",
     "url": "git+https://github.com/crazyrabbitLTC/ZOS-LinkedList.git"
   },
+"files": [
+"build",
+"contracts",
+"test",
+"zos.json",
+"zos.*.json"
+],
   "keywords": [
     "solidity",
     "ethereum",
