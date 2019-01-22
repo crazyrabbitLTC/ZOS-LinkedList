@@ -24,7 +24,6 @@ module.exports = {
         );
       },
       gas: 200000000,
-	gasPrice: 5e4,
       network_id: 1
     },
     rinkeby: {

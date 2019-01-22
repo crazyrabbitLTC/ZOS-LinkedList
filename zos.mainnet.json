@@ -130,5 +130,14 @@
   "solidityLibs": {},
   "proxies": {},
   "zosversion": "2",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "app": {
+    "address": "0x270c7e52c390976bf69fa33d650e3e84fdea7f27"
+  },
+  "package": {
+    "address": "0x3df51278ae505923bfac36256d319f3329657787"
+  },
+  "provider": {
+    "address": "0x8662f18ec409a9d7f5e63db1b49c2c3653bd10e1"
+  }
 }
